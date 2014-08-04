@@ -1,0 +1,29 @@
+{
+  "name": "realtime-papa",
+  "version": "0.0.1",
+  "description": "A plug-and-play-adapter (papa) for adding realtime functionality to an existing application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kylesuss/realtime-papa.git"
+  },
+  "keywords": [
+    "realtime",
+    "node",
+    "socket.io"
+  ],
+  "author": "Kyle Suss <kyle.suss@tackmobile.com> (http://kylesuss.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylesuss/realtime-papa/issues"
+  },
+  "homepage": "https://github.com/kylesuss/realtime-papa",
+  "dependencies": {
+    "koa": "^0.8.2",
+    "koa-logger": "^1.2.2",
+    "socket.io": "^1.0.6"
+  }
+}
