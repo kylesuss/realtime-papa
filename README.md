@@ -19,6 +19,14 @@ $ npm install
 $ node --harmony app
 ```
 
+## Redis Connection
+
+By default, the Redis connection assumes that Redis is running locally on port 6379. To change this setting, simply update the require statement in `app.js`
+
+```
+var client = redis.createClient(6379, '127.0.0.1');
+```
+
 ## Subscriptions
 
 Update your subscriptions in `app.js`

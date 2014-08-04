@@ -9,7 +9,7 @@ var logger   = require('koa-logger'),
     redis    = require('redis'),
     client   = redis.createClient(6379, '127.0.0.1'),
     server   = require('http').Server(app.callback()),
-    socketio = require('socket.io')(server);
+    io       = require('socket.io')(server);
 
 //////////////////////
 /// Middleware
@@ -36,8 +36,8 @@ client.on('error', function(error) {
 /// Socket IO
 //////////////////////
 
-socketio.on('connection', function(socket) {
-  console.log('Socket.io started')
+io.on('connection', function(socket) {
+  socket.emit('status', 'socket.io initialized');
 });
 
 //////////////////////
