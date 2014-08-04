@@ -10,5 +10,6 @@
 
  ```
  git clone git@github.com:kylesuss/realtime-papa.git
+ cd realtime-papa
  npm install
  ```
