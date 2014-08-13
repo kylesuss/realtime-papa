@@ -19,15 +19,27 @@ $ node --harmony app
 
 By default, the Redis connection assumes that Redis is running locally on port 6379. To change this setting, simply update the require statement in `app.js`
 
-```
+```javascript
 var redis  = require('redis'),
     client = redis.createClient(6379, '127.0.0.1');
 ```
 
 ## Subscriptions
 
-Update your subscriptions in `app.js`
+Add channel subscriptions inside `channels.js`. Channels are looped through inside `app.js` and a subscription is made to each individually.
 
+## Authentication
+
+If your Redis instance requires authentication, you'll need to add an auth method inside `app.js` in order to connect.
+
+```javascript
+client.auth('YOURPASSWORD', function() {
+  console.log('Connected to Redis');
+})
 ```
-client.subscribe('channel');
-```
+
+More on that [here](https://github.com/mranney/node_redis#clientauthpassword-callback).
+
+## Socket Emit
+
+Right now, when the app receives an message from Redis, a message is sent to all connected sockets. For more advanced functionality, consider implementing a room or namespace so that you can specify which clients receive specific messages ([docs](http://socket.io/docs/rooms-and-namespaces/)).

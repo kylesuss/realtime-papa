@@ -1,0 +1,6 @@
+
+//////////////////////
+/// Redis Channels
+//////////////////////
+
+exports.list = ['myAwesomeChannel'];
