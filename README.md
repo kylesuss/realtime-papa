@@ -35,7 +35,7 @@ If your Redis instance requires authentication, you'll need to add an auth metho
 ```javascript
 client.auth('YOURPASSWORD', function() {
   console.log('Connected to Redis');
-})
+});
 ```
 
 More on that [here](https://github.com/mranney/node_redis#clientauthpassword-callback).
