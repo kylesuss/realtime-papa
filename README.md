@@ -42,4 +42,4 @@ More on that [here](https://github.com/mranney/node_redis#clientauthpassword-cal
 
 ## Socket Emit
 
-Right now, when the app receives an message from Redis, a message is sent to all connected sockets. For more advanced functionality, consider implementing a room or namespace so that you can specify which clients receive specific messages ([docs](http://socket.io/docs/rooms-and-namespaces/)).
+Right now, when the app receives an message from Redis, a message is sent to all connected clients. For more advanced functionality, consider implementing a room or namespace so that you can specify which clients receive specific messages ([docs](http://socket.io/docs/rooms-and-namespaces/)).
