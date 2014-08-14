@@ -3,8 +3,12 @@
   "version": "0.0.1",
   "description": "A plug-and-play-adapter (papa) for adding realtime functionality to an existing application.",
   "main": "app.js",
+  "engines": {
+    "node": "0.11.x"
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node --harmony app"
   },
   "repository": {
     "type": "git",
