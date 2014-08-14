@@ -12,7 +12,7 @@ Realtime papa is designed to be deployed as a standalone application that can be
 $ git clone git@github.com:kylesuss/realtime-papa.git
 $ cd realtime-papa
 $ npm install
-$ node --harmony app
+$ npm start
 ```
 
 ## Redis Connection
