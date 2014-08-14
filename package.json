@@ -19,7 +19,7 @@
     "node",
     "socket.io"
   ],
-  "author": "Kyle Suss <kyle.suss@tackmobile.com> (http://kylesuss.com/)",
+  "author": "Kyle Suss <susskyle@gmail.com> (http://kylesuss.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kylesuss/realtime-papa/issues"
